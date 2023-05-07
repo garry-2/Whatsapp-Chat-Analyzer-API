@@ -3,11 +3,9 @@ import preprocessor,helper
 import json
 
 
-
-
 app = Flask(__name__)
 
-@app.route('/upload',methods=['POST'])
+@app.route('/',methods=['POST'])
 def upload_file():
     fileSrc = request.files['file']
 
